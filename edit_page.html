@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Edit Article</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Page </title>
+  <link rel="stylesheet" href="edit.css">
 </head>
 
 <body>
 
-  <div class="container">
-    <h2>Edit Article</h2>
-    <form id="edit-article-form">
-      <p>Title:</p>
-      <input type="text" id="title" name="title" placeholder="Existing article title"><br>
-      <p>Content:</p>
-      <textarea cols="30" rows="10" id="text" name="content" placeholder="Existing article content"></textarea><br>
-      <input class="submit" type="submit" value="Submit">
+  <div class="center">
+    <h1>Edit Page - Encyclopedia</h1>
+  </div>
+  <header>
+    <nav>
+      <a href="Assignment.html"> &lArr; Home</a>
+
+    </nav>
+  </header>
+  <div class="edit-form center">
+    <form action="/update" method="post">
+      <label for="pageTitle">Page Title:</label>
+      <input type="text" id="pageTitle" name="pageTitle" required>
+
+      <label for="pageContent">Page Content:</label>
+      <textarea id="pageContent" name="pageContent" rows="8" required></textarea>
+
+      <button type="submit">Save Changes</button>
     </form>
   </div>
-  
-  <script src="edit_page.js"></script>
+  <p>Editing a page in the encyclopedia allows users to contribute to the collective knowledge by updating, refining, or
+    expanding existing content. Through collaboration and review, edits ensure the accuracy, relevance, and
+    comprehensiveness of information, fostering a dynamic and evolving resource for users worldwide.</p>
+  <footer>
+    <p>&copy; 2024 Online Encyclopedia. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
