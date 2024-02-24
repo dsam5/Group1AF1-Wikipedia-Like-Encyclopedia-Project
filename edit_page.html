@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page - Wikipedia-like Encyclopedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="save_edited_page.php" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" value="Article Title" required>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required>Article content goes here</textarea>
+            <button type="submit">Save Changes</button>
+        </form>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
